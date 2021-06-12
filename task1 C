@@ -1,1 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
+int main() {
+int n,r,x,y;
+scanf("%d%d%d%d",&n,&r,&x,&y);
+ int a[n];
+  int b[n];
+  int k=r;
+  for(int i=0;i<n;i++){
+    scanf("%d",&a[i]);
+  }
+  for(int i=0;i<n;i++){
+    scanf("%d",&b[i]);
+  }
+  for(int i=0;i<n;i++){
+    if(a[i]==1 && b[i]==1){
+        k+=x;
+    }
+    else if(a[i]==1 && b[i]==0){
+        k-=y;
+  }
+  else{
+    k=k;
+  }
+  }
+  if(k>r){
+    printf("promoted");}
+  else if(k<r){
+    printf("demoted");}
+  else{
+    printf("no change");}
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
