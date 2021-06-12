@@ -1,1 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
+int main() {
+   int n,found,count=0;
+ scanf("%d",&n);
+ char str[n+1];
+scanf("%s",str);
+if(n%2==0){
+ while(n!=1){
+for(int i=0;i<n/2;i++){
+     found=1;
+    if(str[i]!=str[n/2+i]){
+        found=0;
+       break;
+    }
+
+}
+if(found==1){
+        count++;
+   n=n/2;
+   }
+else{
+    break;
+}
+}
+printf("%d",count);
+}
+else{
+    printf("0");
+}   
+    return 0;
+}
