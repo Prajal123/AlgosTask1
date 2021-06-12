@@ -1,1 +1,37 @@
+Explanation 1:-
+
+In first question we have to find two binary strings whose differnce is minimum and the average of these two is equal to the number given by the user.
+So at first, I took length of string as input and then the string .
+Then I applied all the limitations(string length <=100000 and equal to n, all the elements of string are binary , string does not contain 1 as first element and other all are 0,
+all are 0 and all are 1)  in which we can't print those two strings. 
+We want the difference of two strings minimum and this can only be possible when one number is 1 lesser than the given number and other number is 1 greater than the given number
+So , I applied this fact and obtained two string by adding and subtracting 1 from the given string and then printed them.
+
+Explanation 2:-
+
+In second question , we have to count the number of times by which string can be divided into two equal halves.
+So , at first I took length of string as input and then the string.
+Then I applied a while loop which always reduces the size to half till n is not equal to 0 ,count the number of times and breaks if the first half is not equal to second half. 
+In, for loop , i took found=1 and then checks all the element of the first half whether they are matched with the second half or not . if not then i breaks the loop and modified
+found =0 by which it can tell to the while loop that it is not a symmetry
+At last I printed the no of times by which we can divide the loop into equal halves.
+
+Explanation 3:-
+
+In third question we have to find the final amount of the spider after taking all the workshops and on this basis we have to print promoted, demoted and no change.
+So at first, I took duration of workshop ,their initial amount and loss and profit after a workshop as input in first line.
+Then I took input that they have workshop on ith day or not in terms of 0 and 1. 0 for not and 1 for Yes.
+Then i took input that the head eats pizza on that day or not in terms of 0 and 1. 0 for not and 1 for Yes.
+The concept of this question is that they get profit when the head eats pizza on that day when they have workshop and they get loss if he doesn't eat pizza on that workshop day.
+In all other cases ,the amount remains same.
+So , I applied the concept by taking a for loop in which count their amount after every day in the duration of workshops.
+Then after counting the amount , i compare the amount with the initial amount and then finally print the answer.
+
+Explanation 4:-
+
+In fourth question we have to print the pattern .
+So, I took input the test cases and no of rows for each test case from the user.
+Then I took for loops for the test cases , for the rows and for the columns . 
+First I applied the for loop for the first half of the loop . In this i applied the conditions in which it can't print "*" in the row . after this , i applied for the loop for 
+the second half and then apply the conditions in which it cant print "*" . That is the concept I applied .
 
