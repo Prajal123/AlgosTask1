@@ -32,6 +32,6 @@ scanf("%d%d%d%d",&n,&r,&x,&y);
     printf("demoted");}
   else{
     printf("no change");}
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+       
     return 0;
 }
