@@ -1,1 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int t;
+scanf("%d",&t);
+int n[t];
+
+for(int i=0;i<t;i++){
+    scanf("%d",&n[i]);
+}
+for(int i=0;i<t;i++){
+    for(int j=1;j<=n[i]/2+1;j++){
+        for(int k=1;k<=n[i];k++){
+         if(k>n[i]/2+1-j+1 && k<n[i]/2+j)
+            printf(" ");
+         else{
+            printf("*");
+         }
+        }
+        printf("\n");
+
+    }
+    for(int j=n[i]/2+2;j<=n[i];j++){
+        for(int k=1;k<=n[i];k++){
+            if(k>j-n[i]/2 && k<n[i]-j+n[i]/2+1)
+                printf(" ");
+            else{
+                printf("*");
+            }
+        }
+        printf("\n");
+    }
+}
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
 
